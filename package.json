@@ -1,0 +1,25 @@
+{
+  "name": "mbslice",
+  "version": "1.0.0",
+  "description": "Cut a slice of features from MBTiles.",
+  "bin": {
+    "hello": "./cli.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "keywords": [
+    "command line",
+    "mbtiles",
+    "vector tiles"
+  ],
+  "author": "Ro Wilhelmy <rwilhelmy@gmail.com> (http://wilhel.me)",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^4.5.1"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
