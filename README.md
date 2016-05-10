@@ -46,3 +46,25 @@ tile 7/22/51 size is 523741 with detail 12, >500000
 ```
 
 ![demo](https://raw.githubusercontent.com/rodowi/mbslice/master/screenshot.jpg)
+
+[Residential areas](http://wiki.openstreetmap.org/wiki/Tag:landuse%3Dresidential) in Mexico:
+
+```bash
+➜ mbslice --quiet --filters '["==","landuse","residential"]' ~/mexico.mbtiles > ~/Desktop/residential.json
+Starting up 4 workers... Job started.
+Processing 16732148 tiles.
+16732148 tiles processed in 16m 46s.
+➜ tippecanoe -o residential.mbtiles residential.json
+For layer 0, using name "residential"
+Sorting 13853 features
+13853 features, 1117888 bytes of geometry, 423938 bytes of metadata, 305606 bytes of string pool
+  100.4%  14/4113/7200
+➜ mbview --mbtiles residential.mbtiles
+*** Reading from residential.mbtiles
+*** Metadata found in the MBTiles
+{ scheme: 'tms',
+  basename: 'residential.mbtiles',
+...
+```
+
+![demo](https://raw.githubusercontent.com/rodowi/mbslice/master/residential.jpg)
