@@ -8,15 +8,6 @@ Filters conform to the [Mapbox GL Style Reference](https://www.mapbox.com/mapbox
 
 Works great with [OSM QA Tiles](https://osmlab.github.io/osm-qa-tiles/), [tilestat](https://github.com/rodowi/tilestat), [tippecanoe](https://github.com/mapbox/tippecanoe) and [mbview](https://github.com/mapbox/mbview).
 
-```bash
-% mbslice osmqa.mbtiles --filters '["has","highway"]'
-{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-117.01981781981885,32.542629002499666],[-117.01971053145826,32.54278953898458],[-117.01983382925391,32.542816742541845],[-117.02062516473234,32.5428822430212]]},"properties":{"_osm_way_id":314010977,"_version":1,"_changeset":26958824,"_uid":2167889,"_user":"Map King","_timestamp":1416684807,"highway":"residential"}}
-{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-117.0189228001982,32.54331975956073],[-117.01942085288465,32.54328026162737]]},"properties":{"_osm_way_id":314010978,"_version":1,"_changeset":26958824,"_uid":2167889,"_user":"Map King","_timestamp":1416684807,"name":"Via de la Juventud Oriente","highway":"residential","surface":"paved"}}
-{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-117.0189228001982,32.54331975956073],[-117.01889782212675,32.543090332145084],[-117.0189085509628,32.54298173017354],[-117.01894341968,32.54286641550952],[-117.01905330643058,32.542692312697014],[-117.01913855038583,32.542514959241345]]},"properties":{"_osm_way_id":31582583,"_version":21,"_changeset":26958824,"_uid":2167889,"_user":"Map King","_timestamp":1416684810,"name":"Cañón Otay","highway":"residential"}}
-% mbslice osmqa.mbtiles --filters '["==","landuse","residential"]'
-...
-```
-
 ### Install and run
 
 ```bash
@@ -29,6 +20,17 @@ or
 ```bash
 % npm install
 % node cli.js
+```
+
+then
+
+```bash
+% mbslice osmqa.mbtiles --filters '["has","highway"]'
+{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-117.01981781981885,32.542629002499666],[-117.01971053145826,32.54278953898458],[-117.01983382925391,32.542816742541845],[-117.02062516473234,32.5428822430212]]},"properties":{"_osm_way_id":314010977,"_version":1,"_changeset":26958824,"_uid":2167889,"_user":"Map King","_timestamp":1416684807,"highway":"residential"}}
+{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-117.0189228001982,32.54331975956073],[-117.01942085288465,32.54328026162737]]},"properties":{"_osm_way_id":314010978,"_version":1,"_changeset":26958824,"_uid":2167889,"_user":"Map King","_timestamp":1416684807,"name":"Via de la Juventud Oriente","highway":"residential","surface":"paved"}}
+{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-117.0189228001982,32.54331975956073],[-117.01889782212675,32.543090332145084],[-117.0189085509628,32.54298173017354],[-117.01894341968,32.54286641550952],[-117.01905330643058,32.542692312697014],[-117.01913855038583,32.542514959241345]]},"properties":{"_osm_way_id":31582583,"_version":21,"_changeset":26958824,"_uid":2167889,"_user":"Map King","_timestamp":1416684810,"name":"Cañón Otay","highway":"residential"}}
+% mbslice osmqa.mbtiles --filters '["==","landuse","residential"]'
+...
 ```
 
 ### PoC
