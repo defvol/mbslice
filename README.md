@@ -66,7 +66,7 @@ tile 7/22/51 size is 523741 with detail 12, >500000
 [Residential areas](http://wiki.openstreetmap.org/wiki/Tag:landuse%3Dresidential) in Mexico:
 
 ```bash
-➜ mbslice --quiet --filters '["==","landuse","residential"]' ~/mexico.mbtiles > ~/Desktop/residential.json
+➜ mbslice --quiet --filters '["==","landuse","residential"]' mexico.mbtiles > residential.json
 Starting up 4 workers... Job started.
 Processing 16732148 tiles.
 16732148 tiles processed in 16m 46s.
