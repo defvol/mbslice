@@ -6,7 +6,7 @@ Cut a slice of features from MBTiles.
 
 Filters conform to the [Mapbox GL Style Reference](https://www.mapbox.com/mapbox-gl-style-spec/#filter).
 
-Works great with [OSM QA Tiles](https://osmlab.github.io/osm-qa-tiles/), [tippecanoe](https://github.com/mapbox/tippecanoe) and [mbview](https://github.com/mapbox/mbview).
+Works great with [OSM QA Tiles](https://osmlab.github.io/osm-qa-tiles/), [tilestat](https://github.com/rodowi/tilestat), [tippecanoe](https://github.com/mapbox/tippecanoe) and [mbview](https://github.com/mapbox/mbview).
 
 ```bash
 % mbslice osmqa.mbtiles --filters '["has","highway"]'
