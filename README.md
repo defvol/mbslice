@@ -17,6 +17,20 @@ Works great with [OSM QA Tiles](https://osmlab.github.io/osm-qa-tiles/), [tilest
 ...
 ```
 
+### Install and run
+
+```bash
+% npm install -g mbslice
+% mbslice
+```
+
+or
+
+```bash
+% npm install
+% node cli.js
+```
+
 ### PoC
 [Baja](https://en.wikipedia.org/wiki/Baja_California) highways:
 
