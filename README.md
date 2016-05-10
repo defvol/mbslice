@@ -68,3 +68,7 @@ Sorting 13853 features
 ```
 
 ![demo](https://raw.githubusercontent.com/rodowi/mbslice/master/residential.jpg)
+
+### Similar work
+
+- [MBTiles Extracts](https://github.com/mapbox/mbtiles-extracts): Extracts a smaller MBTiles using a GeoJSON as filter.
