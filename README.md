@@ -88,3 +88,4 @@ Sorting 13853 features
 ### Similar work
 
 - [MBTiles Extracts](https://github.com/mapbox/mbtiles-extracts): Extracts a smaller MBTiles using a GeoJSON as filter.
+- [osm-tag-stats](https://github.com/mapbox/osm-tag-stats): Filter OSM QA Tiles and get stats.
