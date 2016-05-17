@@ -26,14 +26,9 @@ module.exports.slice = function (params) {
     ],
     zoom: params.zoom || 12
   })
-  .on('reduce', function(partial) {
-    features = features.concat(partial);
-  })
-  .on('end', function(error) {
-    // TODO: callback?
+  .on('reduce', function(features) {
     features.forEach(function (f) {
       console.log(JSON.stringify(f));
     });
   });
-
 };
